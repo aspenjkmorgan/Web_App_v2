@@ -1,0 +1,35 @@
+[debug] [2024-03-24T23:50:28.069Z] ----------------------------------------------------------------------
+[debug] [2024-03-24T23:50:28.073Z] Command:       /Users/aspenmorgan/.nvm/versions/node/v20.11.0/bin/node /Users/aspenmorgan/.nvm/versions/node/v20.11.0/bin/firebase serve
+[debug] [2024-03-24T23:50:28.073Z] CLI Version:   13.0.3
+[debug] [2024-03-24T23:50:28.074Z] Platform:      darwin
+[debug] [2024-03-24T23:50:28.074Z] Node Version:  v20.11.0
+[debug] [2024-03-24T23:50:28.074Z] Time:          Sun Mar 24 2024 17:50:28 GMT-0600 (Mountain Daylight Time)
+[debug] [2024-03-24T23:50:28.074Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-24T23:50:28.215Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-24T23:50:28.215Z] > authorizing via signed-in user (aspenkriegermorgan@gmail.com)
+[debug] [2024-03-24T23:50:28.215Z] [iam] checking project hazardous-map-mt for permissions ["firebase.projects.get"]
+[debug] [2024-03-24T23:50:28.217Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazardous-map-mt:testIamPermissions [none]
+[debug] [2024-03-24T23:50:28.217Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazardous-map-mt:testIamPermissions x-goog-quota-user=projects/hazardous-map-mt
+[debug] [2024-03-24T23:50:28.218Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazardous-map-mt:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-24T23:50:28.659Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazardous-map-mt:testIamPermissions 200
+[debug] [2024-03-24T23:50:28.659Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazardous-map-mt:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-24T23:50:28.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hazardous-map-mt [none]
+[debug] [2024-03-24T23:50:29.101Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hazardous-map-mt 200
+[debug] [2024-03-24T23:50:29.102Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hazardous-map-mt {"projectId":"hazardous-map-mt","projectNumber":"1017859593517","displayName":"hazardous-map-mt","name":"projects/hazardous-map-mt","resources":{"hostingSite":"hazardous-map-mt"},"state":"ACTIVE","etag":"1_ac2c7c8a-4817-4ed2-b6b6-bbe168e77068"}
+[info] 
+[info] === Serving from '/Users/aspenmorgan/Projects/Web_Dev/hazardous_particle_map_app/hpm_app'...
+[info] 
+[debug] [2024-03-24T23:50:29.114Z] defaultcredentials: writing to file /Users/aspenmorgan/.config/firebase/aspenkriegermorgan_gmail_com_application_default_credentials.json
+[debug] [2024-03-24T23:50:29.115Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hazardous-map-mt/sites 
+[debug] [2024-03-24T23:50:29.125Z] Setting GAC to /Users/aspenmorgan/.config/firebase/aspenkriegermorgan_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/aspenmorgan/.config/firebase/aspenkriegermorgan_gmail_com_application_default_credentials.json"}}
+[debug] [2024-03-24T23:50:29.126Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hazardous-map-mt/adminSdkConfig [none]
+[debug] [2024-03-24T23:50:29.423Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hazardous-map-mt/adminSdkConfig 200
+[debug] [2024-03-24T23:50:29.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hazardous-map-mt/adminSdkConfig {"projectId":"hazardous-map-mt","storageBucket":"hazardous-map-mt.appspot.com"}
+[debug] [2024-03-24T23:50:29.458Z] Error: listen EADDRINUSE: address already in use ::1:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:2075:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
