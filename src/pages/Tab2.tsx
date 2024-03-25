@@ -23,7 +23,7 @@ const Tab2: React.FC = () => {
         <IonHeader>
           <IonTitle class='about_title'>About</IonTitle>
         </IonHeader>
-          <IonItem><IonImg class='about_mini_image' src='dist/mt.jpg'></IonImg></IonItem>
+          <IonItem><IonImg class='about_mini_image' src='mt.jpg'></IonImg></IonItem>
           <IonItem>
             <IonLabel class='about_text'>
               This website is a part of a project to estimate and predict
@@ -34,7 +34,7 @@ const Tab2: React.FC = () => {
               west are a major contributor.
               </IonLabel>
           </IonItem>
-          <IonItem><IonImg class='about_mini_image' src='dist/map.png'></IonImg></IonItem>
+          <IonItem><IonImg class='about_mini_image' src='map.png'></IonImg></IonItem>
           <IonItem>
             <IonLabel class='about_text'>There are only 20 ground-stations monitoring PM-2.5 in 
               Montana shown above (DEQ, 2022). The first part of this project involved correlating 
