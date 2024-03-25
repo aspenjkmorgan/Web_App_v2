@@ -11,10 +11,9 @@ const Tab1: React.FC = () => {
         <IonToolbar>
           <IonTitle>Montana PM2.5 Map</IonTitle>
           <IonButtons slot="end">
-            <IonButton><IonIcon icon={logoTwitter}></IonIcon></IonButton>
-            <IonButton><IonIcon icon={logoFacebook}></IonIcon></IonButton>
-            <IonButton><IonIcon icon={logoGithub}></IonIcon></IonButton>
-            <IonButton>
+            <IonButton href='https://twitter.com/pm25map_mt'><IonIcon icon={logoTwitter}></IonIcon></IonButton>
+            <IonButton href='https://github.com/mt-pm-concentration-map'><IonIcon icon={logoGithub}></IonIcon></IonButton>
+            <IonButton href='https://inbre.montana.edu/'>
               <IonImg src="https://inbre.montana.edu/images/inbre_logo_blue_shaddow.png" class="cus_logo"></IonImg>
             </IonButton>
           </IonButtons> 

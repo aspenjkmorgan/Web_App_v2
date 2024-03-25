@@ -1,5 +1,5 @@
 import { IonApp, setupIonicReact, IonTabs, IonTabBar, 
-  IonTabButton, IonLabel, IonRouterOutlet, IonHeader} from '@ionic/react';
+  IonTabButton, IonLabel, IonRouterOutlet, IonPage, IonLoading} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Tab1 from './pages/Tab1';
@@ -24,9 +24,24 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+// Bring in firebase backend and react states
+import { firestore } from './firebaseConfig';
+import { useState, useEffect } from 'react';
+
+
 setupIonicReact();
 
 const App: React.FC = () => {
+  const [loading, setLoading] = useState(false);
+
+  if (loading) {
+    return (
+      <IonPage>
+        <IonLoading isOpen={loading} spinner="lines-sharp" />
+      </IonPage>
+    );
+  }
+
   return (
     <IonApp>
       <IonReactRouter>

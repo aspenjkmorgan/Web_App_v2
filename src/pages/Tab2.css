@@ -1,37 +1,27 @@
 .about_title {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: xx-large;
 }
 .about_subheader {
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: x-large;
 }
 
-.about_mini_image1 {
-    width: 300px;
+.about_mini_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 86%;
     height: auto;
-    align-items: left;
 }
 
-.about_mini_image2 {
-    width: auto;
-    height: 150px;
-    padding-left: 2opx;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    align-items: end;
-}
-
-.about_text_item {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
+.about_text {
+    margin-top: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 20px;
 }

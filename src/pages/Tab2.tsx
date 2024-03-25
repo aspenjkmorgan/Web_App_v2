@@ -11,10 +11,9 @@ const Tab2: React.FC = () => {
         <IonToolbar>
           <IonTitle>Montana PM2.5 Map</IonTitle>
           <IonButtons slot="end">
-            <IonButton><IonIcon icon={logoTwitter}></IonIcon></IonButton>
-            <IonButton><IonIcon icon={logoFacebook}></IonIcon></IonButton>
-            <IonButton><IonIcon icon={logoGithub}></IonIcon></IonButton>
-            <IonButton>
+            <IonButton href='https://twitter.com/pm25map_mt'><IonIcon icon={logoTwitter}></IonIcon></IonButton>
+            <IonButton href='https://github.com/mt-pm-concentration-map'><IonIcon icon={logoGithub}></IonIcon></IonButton>
+            <IonButton href='https://inbre.montana.edu/'>
               <IonImg src="https://inbre.montana.edu/images/inbre_logo_blue_shaddow.png" class="cus_logo"></IonImg>
             </IonButton>
           </IonButtons> 
@@ -24,9 +23,9 @@ const Tab2: React.FC = () => {
         <IonHeader>
           <IonTitle class='about_title'>About</IonTitle>
         </IonHeader>
+          <IonItem><IonImg class='about_mini_image' src='dist/mt.jpg'></IonImg></IonItem>
           <IonItem>
-            <IonImg class='about_mini_image1' src='src/pages/smoke_circle.png'></IonImg>
-            <IonLabel>
+            <IonLabel class='about_text'>
               This website is a part of a project to estimate and predict
               hazardous gas particle concentrations across Montana. This project is focused on
               particulate matter under 2.5 micrometers in diameter (PM-2.5). Exposure to these 
@@ -35,8 +34,9 @@ const Tab2: React.FC = () => {
               west are a major contributor.
               </IonLabel>
           </IonItem>
+          <IonItem><IonImg class='about_mini_image' src='dist/map.png'></IonImg></IonItem>
           <IonItem>
-            <IonLabel>There are only 20 ground-stations monitoring PM-2.5 in 
+            <IonLabel class='about_text'>There are only 20 ground-stations monitoring PM-2.5 in 
               Montana shown above (DEQ, 2022). The first part of this project involved correlating 
               ground-station measurements of PM-2.5 with satellite data to create a full coverage 
               concentration map. We used aerosol optical depth and several other climate variables 
@@ -45,7 +45,6 @@ const Tab2: React.FC = () => {
               daily estimates of PM-2.5 concentrations. We are in the process of writing a manuscript 
               for publication.
             </IonLabel>
-            <IonImg class='about_mini_image2' src='src/pages/map.png'></IonImg>
           </IonItem> 
           <IonItem>
             <IonHeader class='about_subheader'>Moving Forward</IonHeader>
