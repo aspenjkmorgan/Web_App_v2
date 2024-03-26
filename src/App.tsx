@@ -24,24 +24,8 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-// Bring in firebase backend and react states
-import { firestore } from './firebaseConfig';
-import { useState, useEffect } from 'react';
-
-
 setupIonicReact();
-
 const App: React.FC = () => {
-  const [loading, setLoading] = useState(false);
-
-  if (loading) {
-    return (
-      <IonPage>
-        <IonLoading isOpen={loading} spinner="lines-sharp" />
-      </IonPage>
-    );
-  }
-
   return (
     <IonApp>
       <IonReactRouter>

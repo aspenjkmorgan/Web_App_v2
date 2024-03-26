@@ -2,6 +2,8 @@ const functions = require("firebase-functions");
 const admin = require('firebase-admin')
 const axios = require('axios');
 
+admin.initializeApp();
+
 exports.pubsub = functions
     .runWith({timeoutSeconds:60})
     .pubsub
