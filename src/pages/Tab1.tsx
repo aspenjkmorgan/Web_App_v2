@@ -1,12 +1,28 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
-  IonButton, IonButtons, IonImg, IonIcon } from '@ionic/react';
-import { logoTwitter, logoFacebook, logoGithub } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonHeader, IonPage, IonTitle, IonToolbar,
+  IonButton, IonButtons, IonImg, IonIcon, 
+  IonMenuToggle, IonMenu, IonContent } from '@ionic/react';
+import { logoTwitter, logoGithub, closeCircleOutline, addCircleOutline,  } from 'ionicons/icons';
 import './Tab1.css';
+import MyMap from '../components/Map';
+import MenuBar from '../components/MenuBar';
 
 const Tab1: React.FC = () => {
   return (
-    <IonPage>
+    <>
+    <IonMenu contentId="main-content">
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle>Air Quality Index Legend</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent className="ion-padding">
+          <IonMenuToggle>
+            <IonButton><IonIcon icon={closeCircleOutline}></IonIcon></IonButton>
+          </IonMenuToggle>
+          <MenuBar />
+        </IonContent>
+    </IonMenu>
+    <IonPage id="main-content">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Montana PM2.5 Map</IonTitle>
@@ -19,16 +35,18 @@ const Tab1: React.FC = () => {
           </IonButtons> 
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        {/* <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" /> */}
-      </IonContent>
+      <IonContent className="ion-padding">
+          <IonMenuToggle>
+            <IonButton><IonIcon icon={addCircleOutline}></IonIcon></IonButton>
+            <MyMap />
+          </IonMenuToggle>
+      </IonContent>  
     </IonPage>
+    </>
   );
 };
 
 export default Tab1;
+
+
+        

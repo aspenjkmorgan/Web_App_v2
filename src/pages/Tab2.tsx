@@ -1,7 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
   IonButton, IonButtons, IonImg, IonIcon, IonText, IonItem, IonLabel } from '@ionic/react';
-import { logoTwitter, logoFacebook, logoGithub } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
+import { logoTwitter, logoGithub } from 'ionicons/icons';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
