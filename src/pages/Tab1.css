@@ -1,3 +1,16 @@
+ion-menu {
+    --width: 16%;
+}
+
+.close_button {
+    width: 100%;
+}
+
+.legend_button {
+    position: relative;
+    margin-top: -10%;
+}
+
 .cus_logo {
     height : 35px;
     width : auto;

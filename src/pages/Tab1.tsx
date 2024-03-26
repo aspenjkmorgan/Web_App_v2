@@ -1,10 +1,10 @@
 import { IonHeader, IonPage, IonTitle, IonToolbar,
   IonButton, IonButtons, IonImg, IonIcon, 
   IonMenuToggle, IonMenu, IonContent } from '@ionic/react';
-import { logoTwitter, logoGithub, closeCircleOutline, addCircleOutline,  } from 'ionicons/icons';
+import { logoTwitter, logoGithub } from 'ionicons/icons';
 import './Tab1.css';
 import MyMap from '../components/Map';
-import MenuBar from '../components/MenuBar';
+import AQILegend from '../components/MenuBar';
 
 const Tab1: React.FC = () => {
   return (
@@ -12,14 +12,14 @@ const Tab1: React.FC = () => {
     <IonMenu contentId="main-content">
         <IonHeader>
           <IonToolbar>
-            <IonTitle>Air Quality Index Legend</IonTitle>
+            <IonTitle>AQI Legend</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent className="ion-padding">
           <IonMenuToggle>
-            <IonButton><IonIcon icon={closeCircleOutline}></IonIcon></IonButton>
+            <IonButton className='close_button'>Close</IonButton>
           </IonMenuToggle>
-          <MenuBar />
+          <AQILegend />
         </IonContent>
     </IonMenu>
     <IonPage id="main-content">
@@ -37,8 +37,8 @@ const Tab1: React.FC = () => {
       </IonHeader>
       <IonContent className="ion-padding">
           <IonMenuToggle>
-            <IonButton><IonIcon icon={addCircleOutline}></IonIcon></IonButton>
             <MyMap />
+            <IonButton className='legend_button'>Legend</IonButton>
           </IonMenuToggle>
       </IonContent>  
     </IonPage>

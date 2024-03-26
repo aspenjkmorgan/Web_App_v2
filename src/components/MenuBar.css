@@ -1,23 +1,30 @@
+
 .B1 {
-    background-color: green;
+    --background: green;
+    width: 100%;
 }
 
 .B2 {
-    background-color: yellow;
+    --background: #ffeb3b;
+    width: 100%;
 }
 
 .B3 {
-    background-color: orange;
+    --background: orange;
+    width: 100%;
 }
 
 .B4 {
-    background-color: red;
+    --background: red;
+    width: 100%;
 }
 
 .B5 {
-    background-color: blueviolet;
+    --background: blueviolet;
+    width: 100%;
 }
 
 .B6 {
-    background-color: gray;
+    --background: gray;
+    width: 100%;
 }
