@@ -4,14 +4,6 @@ import './MenuBar.css';
 import {IonSearchbar, IonButton, IonPopover, IonContent, IonList, IonItem} from '@ionic/react';
 import SiteData from './GetSites';
 
-const query = firestore.collection("Sites"); // query collection
-const documents = await query.get(); // get the documents
-const data1 = Array();
-// Iterate over the documents and save their data to list
-documents.forEach((doc) => {
-    data1.push(doc.data())
-});
-
 const AQILegend: React.FC = () => {
     const data = ['Helena', 'Missoula', 'Bozeman']; // FIX LATER: replace with database values
     let [results, setResults] = useState([...data]);
@@ -62,7 +54,7 @@ const AQILegend: React.FC = () => {
             <IonContent class="ion-padding">PM-2.5 concentration: 200.1+ ug/m^3.</IonContent>
         </IonPopover>
 
-        {/* <SiteData /> */}
+        {/* <SiteData /> Tests database call */}
         
         </>
   );
