@@ -3,8 +3,9 @@ import {APIProvider, Map} from '@vis.gl/react-google-maps';
 
 
 const MyMap: React.FC = () => {
+  const apiKey = process.env.REACT_APP_API_KEY;
   return (
-  <APIProvider apiKey={"AIzaSyA2_jVJIqQqtE8tPCce5OkM23SkuvCe-24"}>
+  <APIProvider apiKey={apiKey}>
     <Map
       className='map'
       defaultZoom={7}
