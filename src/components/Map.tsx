@@ -3,7 +3,7 @@ import {APIProvider, Map} from '@vis.gl/react-google-maps';
 
 
 const MyMap: React.FC = () => {
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiKey:string = process.env.REACT_APP_API_KEY!;
   return (
   <APIProvider apiKey={apiKey}>
     <Map
