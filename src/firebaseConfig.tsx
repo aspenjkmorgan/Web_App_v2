@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import firebase from 'firebase/compat/app';
+import { doc, getDoc } from "firebase/firestore";
 import 'firebase/compat/firestore';
 
 // Your web app's Firebase configuration
@@ -16,7 +17,11 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 
-export { firestore };
+// 
+const apiRef = doc(firestore, 'api_key', 'GOOGLE_MAPS')
+const apiSnap = await getDoc(apiRef)
+
+export { firestore, apiSnap };
 
 
 

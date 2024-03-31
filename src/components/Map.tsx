@@ -1,9 +1,9 @@
 import './Map.css';
 import {APIProvider, Map} from '@vis.gl/react-google-maps';
-
+import { apiSnap } from '../firebaseConfig';
+const apiKey = apiSnap.get('key');
 
 const MyMap: React.FC = () => {
-  const apiKey:string = process.env.REACT_APP_API_KEY!;
   return (
   <APIProvider apiKey={apiKey}>
     <Map
