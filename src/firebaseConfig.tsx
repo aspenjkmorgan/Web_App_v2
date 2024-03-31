@@ -2,6 +2,7 @@
 import firebase from 'firebase/compat/app';
 import { doc, getDoc } from "firebase/firestore";
 import 'firebase/compat/firestore';
+import React, {useState, useEffect} from 'react'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,9 +18,8 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 
-// 
-const apiRef = doc(firestore, 'api_key', 'GOOGLE_MAPS')
-const apiSnap = await getDoc(apiRef)
+const apiRef = doc(firestore, 'api_key', 'GOOGLE_MAPS');
+const apiSnap = await getDoc(apiRef);
 
 export { firestore, apiSnap };
 
